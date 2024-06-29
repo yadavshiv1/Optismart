@@ -8,6 +8,16 @@ import Arrow from '../src/arrow.png'
 import Graph from '../src/graph.png'
 import GoldMobile from '../src/gold_mobile.png'
 import Contact from '../src/contact.png'
+import Services from "./Service";
+import Calculator from '../src/Calculator.png'
+import desktop from '../src/desktop.png'
+// import landingImg from '../src/landing-img.png'
+import lock_app from '../src/lock_app.png'
+// import Coffline_mode from '../src/Coffline_mode.png'
+import reminders from '../src/reminders.png'
+import reportss from '../src/reportss.png'
+import {SocialIcon} from 'react-social-icons'
+
 
 
 export default function MainPage() {
@@ -23,6 +33,7 @@ export default function MainPage() {
           <div>Investor Relations</div>
           <div>Contact us</div>
         </div>
+        
       </nav>
       <div className="section-1">
         <div className="sec1-child">
@@ -31,11 +42,9 @@ export default function MainPage() {
             We provide solutions to improve credit & finance, making it simplest
             and fastest for Bharat.
           </h2>
-          <h2>Already using ByajBook ?</h2>
-          <button>Web-app login</button>
         </div>
         <div className="sec1-child">
-          <img src={Section1} alt="section-1" className="section1_img" />
+          <img src={Logo} alt="section-1" className="section1_img" />
         </div>
       </div>
       <div className="section-2">
@@ -44,10 +53,8 @@ export default function MainPage() {
           <p>
             Our goal is to Bridge the Credit Gap for Rural India/Bharat through
             Lenders. We provide solutions to improve credit & finance, making it
-            simplest and fastest for Rural India. Our First Product - An Android
-            App was launched in July, 2021; helping business and individuals to
-            digitally maintain the lending or borrowings. So far ByajBook has
-            been downloaded over 350k times. As People are adopting digital
+            simplest and fastest for Rural India.helping business and individuals to
+            digitally maintain the lending or borrowings.As People are adopting digital
             solutions, we try to help individuals and merchants in managing
             their lending and borrowings.
           </p>
@@ -56,7 +63,8 @@ export default function MainPage() {
           <img src={AboutUs} alt="section-2" className="section2_img" />
         </div>
       </div>
-      <div className="section-3">
+     <div>
+     <div className="section-3">
         <div className="sec-3-child">
             <div className="sec-3-child-1">
             <img src={Cash} alt="cash" className="cash_img" />
@@ -73,115 +81,38 @@ export default function MainPage() {
         <img src={Graph} alt="graph" />
         </div>
       </div>
-      <div className="container">
-  <div className="column" style={{ flexBasis: '15%' }}>
-    jkj
-  </div>
-  <div className="column" style={{ flexBasis: '35%' }}>
-    <h1></h1>
-    <div>
-        <img></img>
-        <h3>fdf</h3>
-    </div>
-    <div>
-        <img></img>
-        <h3>fd</h3>
-    </div>
-    <div>
-        <img></img>
-        <h3>fd</h3>
-    </div>
-    <button>sdf</button>
-  </div>
-  <img src={GoldMobile} alt="gold_mobile" />
-  <div className="column" style={{ flexBasis: '15%' }}>Fourth Div</div>
-</div>
-      <div className="section-5">
-        <div>Features</div>
-        <div className="section-5-child">
-            <div>
-            <img src={Cash} alt="cash" className="cash_img" />
-                <h2>Available on Desktop</h2>
-            </div>
-            <div>
-            <img src={Cash} alt="cash" className="cash_img" />
-                <h2>Available on Desktop</h2>
-            </div>
-            <div>
-            <img src={Cash} alt="cash" className="cash_img" />
-                <h2>Available on Desktop</h2>
-            </div>
-            <div>
-            <img src={Cash} alt="cash" className="cash_img" />
-                <h2>Available on Desktop</h2>
-            </div>
-            <div>
-            <img src={Cash} alt="cash" className="cash_img" />
-                <h2>Available on Desktop</h2>
-            </div>
-            <div>
-            <img src={Cash} alt="cash" className="cash_img" />
-                <h2>Available on Desktop</h2>
-            </div>
-        </div>
+      <section class="features-section">
+    <h2>Features</h2>
+    <div class="features-container">
+      <div class="feature-item">
+        <img src={Calculator} alt="Available on Desktop" />
+        <p>Available on Desktop</p>
       </div>
-      <div className="section-1">
-        <div className="sec1-child">
-          <h1>Simplifying Credit & Finance for Lenders in Bharat</h1>
-          <h2>
-            We provide solutions to improve credit & finance, making it simplest
-            and fastest for Bharat.
-          </h2>
-          <h2>Already using ByajBook ?</h2>
-          <button>Web-app login</button>
-        </div>
-        <div className="sec1-child">
-          <img src={Section1} alt="section-1" className="section1_img" />
-        </div>
+      <div class="feature-item">
+        <img src={desktop} alt="Security lock" />
+        <p>Security lock</p>
       </div>
-      <div className="section-1">
-        <div className="sec1-child">
-          <h1>Simplifying Credit & Finance for Lenders in Bharat</h1>
-          <h2>
-            We provide solutions to improve credit & finance, making it simplest
-            and fastest for Bharat.
-          </h2>
-          <h2>Already using ByajBook ?</h2>
-          <button>Web-app login</button>
-        </div>
-        <div className="sec1-child">
-          <img src={Section1} alt="section-1" className="section1_img" />
-        </div>
+      <div class="feature-item">
+        <img src={lock_app} alt="Automated Reminders" />
+        <p>Automated Reminders</p>
       </div>
+      <div class="feature-item">
+        <img src={desktop} alt="Generate Reports" />
+        <p>Generate Reports</p>
+      </div>
+      <div class="feature-item">
+        <img src={reminders} alt="Offline Mode" />
+        <p>Offline Mode</p>
+      </div>
+      <div class="feature-item">
+        <img src={reportss} alt="Calculations simplified" />
+        <p>Calculations simplified</p>
+      </div>
+    </div>
+  </section>
+     <Services />
+     </div>
       <div className="section-8"></div>
-    <div class="contact-container">
-        <div class="contact-info">
-            <h1>Contact us</h1>
-            <p>Reach out to us anytime.</p>
-            <img src={Contact} alt="Contact Us" />
-        </div>
-        <div class="contact-form">
-            <form>
-                <div class="form-group">
-                    <input type="text" placeholder="Name" required />
-                    <span class="required">*</span>
-                </div>
-                <div class="form-group">
-                    <input type="text" placeholder="Mobile number" pattern="[0-9]{10}" required />
-                    <span class="required">*</span>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="E-mail" required />
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Message" rows="4" required></textarea>
-                    <span class="required">*</span>
-                </div>
-                <button type="submit" disabled>Submit</button>
-            </form>
-        </div>
-    </div>
-
       <footer class="footer-body">
     <div id="footer-body-layout">
         <div class="footer-body-left">
@@ -193,17 +124,17 @@ export default function MainPage() {
             </div>
             <span class="stay-connected-span mt-2">STAY CONNECTED</span>
             <div id="socialHandleIcons" class="w-100 mt-3">
-                <a href="https://www.instagram.com/byajbook" target="_blank">
-                    <img src="/assets/insta.png" alt="Instagram" height="30px" />
+                <a href="https://www.instagram.com" target="_blank">
+                <SocialIcon network="instagram" />
                 </a>
-                <a href="https://www.facebook.com/byajbook" target="_blank">
-                    <img src="/assets/facebook.png" alt="Facebook" height="26px" />
+                <a href="https://www.facebook.com" target="_blank">
+                <SocialIcon network="facebook" />
                 </a>
-                <a href="https://www.linkedin.com/company/byajbook/?originalSubdomain=in" target="_blank">
-                    <img src="/assets/linkedin.png" alt="LinkedIn" height="30px" />
+                <a href="https://www.linkedin.com" target="_blank">
+                <SocialIcon url="https://linkedin.com/in/couetilc"/>
                 </a>
-                <a href="https://twitter.com/byajbook" target="_blank">
-                    <img src="/assets/twitter.png" alt="Twitter" height="30px" />
+                <a href="https://twitter.com" target="_blank">
+                <SocialIcon network="twitter" bgColor="#  " />
                 </a>
             </div>
         </div>
