@@ -973,3 +973,98 @@ button:disabled {
     padding: 10px;
 }
 
+.who-we-are {
+  text-align: center;
+  padding: 20px;
+}
+
+.who-we-are h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.who-we-are p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-image img {
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (min-width: 768px) {
+  .who-we-are p {
+    font-size: 1.2rem;
+  }
+}
+.meet-our-team {
+  text-align: center;
+  padding: 20px;
+}
+
+.meet-our-team h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team-member {
+  flex: 1 1 calc(33.333% - 40px);
+  max-width: calc(33.333% - 40px);
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+.team-member h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .team-member {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .team-member {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.contact-model{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.contact-model-info{
+  display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contact-model-info p{
+  color: #000;
+}
+.contact-model-container{
+  padding-block: 50px;
+}
